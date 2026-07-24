@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  background-color: #161C23;
+}
+
 @theme {
   --font-sans: "Jura", ui-sans-serif, system-ui, sans-serif;
 }
