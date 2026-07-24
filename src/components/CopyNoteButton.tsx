@@ -21,7 +21,7 @@ export function CopyNoteButton({ editorRef }: CopyNoteButtonProps) {
       type="button"
       onClick={handleCopy}
       aria-label="Copy note"
-      className="fixed bottom-6 right-6 z-50 flex size-11 items-center justify-center rounded-lg bg-slate-800/80 text-xl backdrop-blur hover:bg-slate-700/90"
+      className="cursor-pointer fixed bottom-6 right-6 z-50 flex size-11 items-center justify-center rounded-full bg-slate-800/80 text-xl backdrop-blur hover:bg-slate-700/90"
     >
       📋
     </button>
