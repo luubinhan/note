@@ -1,21 +1,9 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
+import { usePersistedNote } from './hooks/usePersistedNote'
 
 function App() {
   const editorRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const el = editorRef.current
-    if (!el) return
-
-    el.focus()
-
-    const range = document.createRange()
-    range.selectNodeContents(el)
-    range.collapse(true)
-    const selection = window.getSelection()
-    selection?.removeAllRanges()
-    selection?.addRange(range)
-  }, [])
+  usePersistedNote(editorRef)
 
   return (
     <main className="min-h-screen bg-slate-950 text-slate-50 flex items-center justify-center p-8">
