@@ -22,7 +22,7 @@ function App() {
           ref={editorRef}
           contentEditable
           onPaste={handlePaste}
-          className="text-left w-full min-h-[90vh] resize-none text-4xl/12 focus:outline-none"
+          className="text-left w-full min-h-[90vh] resize-none text-4xl/12 focus:outline-none whitespace-pre-wrap break-words"
         />
       </div>
     </main>
