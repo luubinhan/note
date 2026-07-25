@@ -1,6 +1,7 @@
 import { useRef, type ClipboardEvent } from 'react'
 import { Toaster } from 'react-hot-toast'
 import { CopyNoteButton } from './components/CopyNoteButton'
+import { DeleteNoteButton } from './components/DeleteNoteButton'
 import { usePersistedNote } from './hooks/usePersistedNote'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   return (
     <main className="min-h-screen text-slate-50 flex items-center justify-center p-8">
       <Toaster />
+      <DeleteNoteButton editorRef={editorRef} />
       <CopyNoteButton editorRef={editorRef} />
       <div className="min-w-2xl min-h-[90vh] max-w-2xl text-center space-y-4 ">
         <div
