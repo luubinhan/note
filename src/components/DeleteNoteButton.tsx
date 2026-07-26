@@ -20,7 +20,8 @@ export function DeleteNoteButton({ editorRef }: DeleteNoteButtonProps) {
       type="button"
       onClick={handleDelete}
       aria-label="Delete note"
-      className="cursor-pointer fixed bottom-6 right-6 z-50 flex size-11 items-center justify-center rounded-full bg-slate-800/80 text-xl backdrop-blur hover:bg-slate-700/90"
+      title="Delete note"
+      className="cursor-pointer opacity-30 fixed bottom-6 right-6 z-50 flex size-11 items-center justify-center rounded-full text-xl backdrop-blur hover:opacity-80"
     >
       <svg
         width="22"

@@ -21,7 +21,8 @@ export function CopyNoteButton({ editorRef }: CopyNoteButtonProps) {
       type="button"
       onClick={handleCopy}
       aria-label="Copy note"
-      className="cursor-pointer fixed top-6 right-6 z-50 flex size-11 items-center justify-center rounded-full bg-slate-800/80 text-xl backdrop-blur hover:bg-slate-700/90"
+      title="Copy note"
+      className="cursor-pointer fixed top-6 right-6 z-50 flex size-11 items-center justify-center rounded-full text-xl backdrop-blur hover:opacity-80 opacity-30"
     >
       <svg
         width="22"
